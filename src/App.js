@@ -1,6 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react'
 import useBookSearch from './useBookSearch'
-
+import './styles.scss'
 export default function App() {
   const [query, setQuery] = useState('')
   const [pageNumber, setPageNumber] = useState(1)
@@ -31,7 +31,7 @@ export default function App() {
   }
 
   return (
-    <>
+    <div className="container">
       <input type="text" value={query} onChange={handleSearch}></input>
       {books.map((book, index) => {
         if (books.length === index + 1) { //get the ref the last book
@@ -40,9 +40,9 @@ export default function App() {
           return <div key={book}>{book}</div>
         }
       })}
-      <div>{loading && 'Loading...'}</div>
+      <div className="load">{loading && 'Loading...'}</div>
       <div>{error && 'Error'}</div>
-    </>
+    </div>
   )
 }
 
