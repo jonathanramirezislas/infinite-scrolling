@@ -1,33 +1,58 @@
 {
-  "name": "react-typescript-webpack",
+  "name": "JournalApp",
   "version": "1.0.0",
-  "description": "simple app  React,TypeScript and Webpack.",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "start": "webpack --mode=production",
+    "build": "webpack ",
+    "test": "jest --config jest.config.json --mode=test --detectOpenHandles --forceExit  --env=node",
+    "dev": "webpack-dev-server --history-api-fallback --mode=development "
   },
-  "keywords": [
-    "react",
-    "typescript",
-    "webpack"
-  ],
-  "author": "Grant Bartlett",
-  "license": "MIT",
-  "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
-  },
+  "keywords": [],
+  "author": "Jonathan",
+  "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^24.0.25",
-    "@types/react": "^16.8.1",
-    "@types/react-dom": "^16.0.11",
-    "awesome-typescript-loader": "^5.2.1",
-    "html-webpack-plugin": "^3.2.0",
-    "source-map-loader": "^0.2.4",
-    "typescript": "^3.3.1",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@types/enzyme": "^3.10.8",
+    "@types/jest": "^26.0.19",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.1",
+    "exports-loader": "^1.1.1",
+    "file-loader": "^6.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "image-webpack-loader": "^7.0.1",
+    "imports-loader": "^1.2.0",
+    "jest": "^26.6.3",
+    "jsdom": "16.4.0",
+    "jsdom-global": "3.0.2",
+    "mini-css-extract-plugin": "^1.3.3",
+    "node-sass": "^5.0.0",
+    "redux-mock-store": "^1.5.4",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@testing-library/react": "^11.2.3",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^6.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
   }
 }
