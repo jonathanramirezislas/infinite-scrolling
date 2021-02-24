@@ -43,7 +43,7 @@ infinite scrolling code to implement in other proyects
 
 ## 🗄️ Backend Implementations
 
-- [openlibrary](hhttp://openlibrary.org/search.json)
+- [openlibrary](http://openlibrary.org/search.json)
 
 
 ## Authors
